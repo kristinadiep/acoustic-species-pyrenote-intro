@@ -7,8 +7,9 @@ Once you have opened the site on the browser of your choice, the first thing you
 - Figure out how to stop the user form uploading the password if the passwords don't match in either text box you make
 - finsh the Axios method for handling the uploading part on the frontend side. 
 
-Link to expected output \ INSERT LINK
-
 **Hints**
 - If you need to use print statements, use console.log. Then right-click on your browser to open up the inspect tool. Here you can see the various elements of the website and open up the console on the frontend. Try planning around with it has it is a pretty useful tool for debugging. 
 - Feel free to look up documentation, check out pyrenote, or use reference code to solve this and future problems! 
+
+**Task two**
+- Here is the link to the next [task](./task2.md)

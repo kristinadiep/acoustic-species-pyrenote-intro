@@ -13,7 +13,10 @@ To solve, these issues, we can look at these two files:
 Your task is to attempt to fix these various issues. 
 (This is based on a very real issue that took me way longer to fix than I would have liked the first time I encountered the bugs)
 
-Hints: 
+**Hints**: 
 - Try playing around with the position and float values of the various wavesurfer related containers such as waveform to timeline in index.css
 - Look up wavesurfer.js documentation for attributes to wavesurfer.create() that could change a property that could make the wavesurfer.js functionally invisible. 
 - The inspect tool on your browser can allow you to change the styling of an element in real time, use this to try and play around with the position and float of the various wavesurfer containers to try and solve the spectrogram alignment issues
+
+**Task two**
+- Here is the link to the next [task](./task3.md)

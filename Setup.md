@@ -1,6 +1,6 @@
 
 
-So lets get started. If you haven't already, fork this GitHub repo into your personal account. After doing so, you can clone this fork to your personal computer.  
+So lets get started. If you haven't already, **fork this GitHub repo**. After doing so, **clone this fork** to your personal computer.  
 
 One thing you may notice is that there is a lot of things going on. You got the frontend, backend, sql, redis, nginx stuff all going on in this area. Don't worry about this for now. Your main goals working with us will be spend on the frontend and/or backend elements of the project. 
 
@@ -23,13 +23,6 @@ Replace the INSERT_SOMETHING with whatever you choose. The admin_username and ad
 
 **What is going on?**
 Let talk a bit about some of what is going on. In the main src folder, there is a bunch of .yml files. Each of these defines what containers we want to start, where the code is for each container, and what port we want that container to listen to for any messages coming towards it. 
-
-
-
-
-
-
-
 
 
 **To build the services (do this when you frist start it), run:**
@@ -64,4 +57,4 @@ $ docker-compose -f docker-compose.dev.yml down
   - Check to make sure in line 25, the stamp command is pointing to the right migration for the database,
       - Ask for help on this one
 
-If everything worked out with getting docker set up, when after a few minutes (give it some time for Frist runs it can take a second to get set up )you should be able to [http://localhost:3000/](http://localhost:3000/). Remember to reach out to project leads in case something does not get set up correctly. Once you see a page to log in to Pyrelite in [http://localhost:3000/](http://localhost:3000/), you are ready for the next step: INSERT LINK HERE
+If everything worked out with getting docker set up, when after a few minutes (give it some time for Frist runs it can take a second to get set up )you should be able to [http://localhost:3000/](http://localhost:3000/). Remember to reach out to project leads in case something does not get set up correctly. Once you see a page to log in to Pyrelite in [http://localhost:3000/](http://localhost:3000/), you are ready for [the next step](./task1.md).
