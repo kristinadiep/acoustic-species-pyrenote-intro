@@ -12,8 +12,10 @@ import { Button } from '../components/button';
 class CreateUser extends React.Component {
   constructor(props) {
     super(props)
-    this.state = {
-      usernameForm: null
+    this.state = { // kat: our state variables
+      usernameForm: null,
+      passwordForm: null,
+      passwordConfirmForm: null
     }
   }
 
@@ -26,6 +28,8 @@ class CreateUser extends React.Component {
   handleUpload() {
     //get data from state for username, password, and password confrim
     const {usernameForm} = this.state
+    const {passwordForm} = this.state
+    const {passwordConfirmForm} = this.state
     
     //How do we check for a matching password and notify the user?
       //HINT: Use state variables!!!
@@ -57,22 +61,38 @@ class CreateUser extends React.Component {
 
   render() {
     const {usernameForm} = this.state
+    const {passwordForm} = this.state
     
     return (
       <div className="container h-75 text-center">
         <div className="row h-100 justify-content-center align-items-center">
           <div className="form-group">
-          <input
-            type="text"
-            className="form-control"
-            id="username"
-            placeholder="Username"
-            autoFocus
-            required
-            onChange={e => this.handleUsernameChange(e)}
-          />
-        </div>
-        
+            <input
+              type="text"
+              className="form-control"
+              id="username"
+              placeholder="Username"
+              autoFocus
+              required
+              onChange={e => this.handleUsernameChange(e)}
+            /> 
+            // kat: putting all three inputs inside this one div is kinda uggo (no space in between)
+            //      but trying to copy src/containers/loginForm.js so far makes it one row, so just stick to this for now
+            <input
+              type="text"
+              className="form-control"
+              id="password"
+              placeholder="New Password"
+              required
+            />
+            <input
+              type="text"
+              className="form-control"
+              id="password-confirm"
+              placeholder="New Password (confirm)"
+              required
+            />
+          </div>
         </div>
         <div>
         Looks like you are typing {usernameForm} 
