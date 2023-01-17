@@ -60,7 +60,8 @@ class CreateUser extends React.Component {
       method: 'post',
       url: 'api/create_users',
       data: {
-        username: usernameForm, passwordForm
+        username: usernameForm, 
+        password: passwordForm   // dictionaries yay // THISSSS IS THE ISSUEEEE
       }
     })
       .then(response => {

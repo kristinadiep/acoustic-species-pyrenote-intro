@@ -22,13 +22,16 @@ from . import api
 
 @api.route("/create_users", methods=["POST"])
 def create_user():
-    app.logger.inforequest(request)
-    if not request.headers:
-        return jsonify(message="Missing JSON in request"), 400
+    # app.logger.inforequest(request)
+    # app.logger.log(request) # sean asked
+    # if not request.headers:
+        # return jsonify(message="Missing JSON in request"), 400    # hmmm
 
-    username = request.json.get("username", None)
-    password = request.json.get("password", None)
+    username = request.json.get("username", None)  # looks for key in the dictionary
+    password = request.json.get("password", None)  # looks for key in the dictionary
     role_id = "2"
+
+    app.logger.info(password) # hmmmm
 
     msg, status = check_login(username, password, role_id)
     if msg is not None:
